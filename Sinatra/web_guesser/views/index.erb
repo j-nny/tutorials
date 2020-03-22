@@ -1,7 +1,19 @@
 <html>
-  <head></head>
+  <head>
+    <style>
+      .red {
+        color: red;
+      }
+      .pink {
+        color: pink;
+      }
+      .green {
+        color: green;
+      }
+    </style>
+  </head>
   <body>
-    <p>
+    <p class="<%= colour %>">
       <%= message %>
     </p>
     <form>
@@ -9,4 +21,4 @@
       <input type='submit' value='Guess!' />
     </form>
   </body>
-</html>`
+</html>
