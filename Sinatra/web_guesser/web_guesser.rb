@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 SECRET_NUMBER = rand(101)
-@@attempt = 5
+@@guesses_remaining = 5
 
 get '/' do
   guess = params['guess'].to_i
